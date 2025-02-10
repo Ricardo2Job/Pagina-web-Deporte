@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Evita cualquier barra de desplazamiento */
+  }
+  
+  .fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../Imagenes/fondo1.png') no-repeat center center fixed;
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    animation: changeBackground 36s infinite; /* Duración total ajustada (10s imagen + 2s fade) */
+    transition: opacity 2s ease-in-out; /* Fade de 2 segundos */
+    opacity: 1; /* Iniciar visible */
+    z-index: -1; /* Asegura que esté detrás del contenido */
+  }
+  
+  @keyframes changeBackground {
+    0% {
+        background-image: url('../Imagenes/fondo1.png');
+        opacity: 1;
+    }
+    25% {
+        background-image: url('../Imagenes/fondo1.png');
+        opacity: 1; /* Imagen 1 visible durante 10 segundos */
+    }
+    33% {
+        background-image: url('../Imagenes/fondo2.png');
+        opacity: 0; /* Fade de 2 segundos a imagen 2 */
+    }
+    58% {
+        background-image: url('../Imagenes/fondo2.png');
+        opacity: 1; /* Imagen 2 visible durante 10 segundos */
+    }
+    66% {
+        background-image: url('../Imagenes/fondo3.png');
+        opacity: 0; /* Fade de 2 segundos a imagen 3 */
+    }
+    91% {
+        background-image: url('../Imagenes/fondo3.png');
+        opacity: 1; /* Imagen 3 visible durante 10 segundos */
+    }
+    100% {
+        background-image: url('../Imagenes/fondo1.png');
+        opacity: 1; /* Regresar a la imagen 1 */
+    }
+  }
+  
+  .inicio-sesion-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative; /* Asegura que el contenido esté encima del fondo */
+  }
+  
+  .login-box {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+    text-align: center;
+    color: white;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: darkred;
+  }
+  

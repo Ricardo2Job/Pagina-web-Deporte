@@ -4,7 +4,7 @@ import "../Vista/Styles/StyleInicio.css";
 const Inicio = () => {
   return (
     <div className="container">
-      {/* Barra de navegación */}
+      {/* Barra de navegación skibidi */}
       <nav className="navbar">
         <h1>Progreso Deportivo</h1>
         <ul>

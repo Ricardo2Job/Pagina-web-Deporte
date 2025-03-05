@@ -9,7 +9,7 @@ const Inicio = () => {
         <h1>Progreso Deportivo</h1>
         <ul>
           <li><a href="#">Inicio</a></li>
-          <li><a href="#">Rutinas</a></li>
+          <li><a href="Rutinas">Rutinas</a></li>
           <li><a href="#">Progreso</a></li>
           <li><a href="#">Perfil</a></li>
         </ul>
